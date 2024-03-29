@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@media only screen and (max-width: 576px) {
+    input{
+        width: 100% !important;
+    }
+    
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-style: normal;}
+
+.green{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(57, 219, 68);
+}
+.blue{
+    height: 15px;
+    width: 15px;
+    background-color: rgb(90, 6, 245);
+}
+.red{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+}
