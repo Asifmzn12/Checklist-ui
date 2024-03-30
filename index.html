@@ -34,11 +34,11 @@
           <button id="switchToWeekView" class="btn btn-success">Add Leave</button>
           <button id="switchToDayView" class="btn btn-success my-2 my-sm-0 ">Clear All</button>
         </div>
-        <div class="my-3">
-          <div class="row gy-3">
+        <div class="py-2 py-md-5">
+          <div class="row gy-3 ">
             <div class="col-md-6 col-12">
               <div class="d-flex align-items-center ">
-                <i class="fa-solid fa-calendar-days mx-2"></i>
+                <i class="fa-solid fa-calendar-days mx-2 fs-3"></i>
                 <div>
                   <input type="text" placeholder="Search for Checklist"
                     class="rounded disabled text-center border-none">
@@ -71,9 +71,495 @@
 
 
         </div>
+
+
+        <div class="cardbox">
+          <div class="card">
+            <div class="card-body ">
+              <div class="row justify-content-around align-items-center">
+                <div class="col-6">
+                  <div class="iconsbox d-flex gap-2 align-content-center py-3 align-items-center">
+                    <i class="fa-regular fa-circle-xmark btn-success fs-4"></i>
+                    <div class="blue"></div>
+                    <div>
+                      <button class="btn btn-success rounded-5 py-0">Checklist1</button>
+                    </div>
+    
+    
+                  </div>
+
+                </div>
+                <div class="col-6">
+                  <div class="iconsbox d-flex gap-2 justify-content-end  align-items-center">
+                    <p class="fw-bold m-0">Today</p>
+                    <div class="custom-select">
+                      <select class="form-select form-select-lg py-1 pe-0 disabled border-1"
+                        aria-label="small select example">
+                        <option value="0" class="disabled">&#xf0c9;</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                      </select>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-minus fs-4" style="color: #74C0FC;"></i>
+                    </div>
+    
+    
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="list section mb-3">
+              <div class="row gy-3 justify-content-between align-items-center">
+                <div class="col-5">
+                  <div class="d-flex align-items-center form gap-2 mx-2">
+
+                    <input class="form-check-input radiobtn" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                      value="option2">
+                    <label class="form-check-label " for="inlineRadio2">Sub Checklist (C1) </label>
+
+                  </div>
+
+                </div>
+                <div class="col-7 text-end">
+                  <i class="fa-regular fa-trash-can mx-2"></i>
+                  <i class="fa fa-paperclip mx-2" aria-hidden="true"></i>
+                  <i class="fa-solid fa-pen mx-2"></i>
+                  <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                  <i class="fa-regular fa-eye mx-2 "></i>
+
+
+                </div>
+
+              </div>
+              <div class="row gy-3 justify-content-between align-items-center">
+                <div class="col-5">
+                  <div class="d-flex align-items-center form gap-2 mx-2">
+
+                    <input class="form-check-input radiobtn" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                      value="option2">
+                    <label class="form-check-label " for="inlineRadio2">Sub Checklist (C1) </label>
+
+                  </div>
+
+                </div>
+                <div class="col-7 text-end">
+                  <i class="fa-regular fa-trash-can mx-2"></i>
+                  <i class="fa fa-paperclip mx-2" aria-hidden="true"></i>
+                  <i class="fa-solid fa-pen mx-2"></i>
+                  <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                  <i class="fa-regular fa-eye mx-2 "></i>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+
+
+        </div>
       </div>
 
     </div>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Add Leave -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Leave</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row modalitems">
+
+              <div class="col-md-6">
+                <label class="fw-bold">Holi Day Name <b class="fs-5">*</b></label>
+                <input type="text" class="" placeholder="Enter name">
+
+              </div>
+              <div class="col-md-6">
+                <label class="fw-bold">Start Date <b class="fs-5">*</b></label>
+                <input type="date" placeholder="Enter name">
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label class="fw-bold">End Date <b class="fs-5">*</b></label>
+                <input type="date" placeholder="Enter name">
+
+              </div>
+              <div class="col-md-6">
+                <label class="fw-bold">Select Type <b class="fs-5">*</b></label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--Select --</option>
+                  <option value="1">Plan</option>
+                  <option value="2">Unplan</option>
+
+                </select>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+      Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Sub Checklist</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row modalitems">
+
+              <div class="col-md-6">
+                <label class="fw-bold">Name: </label>
+                <input type="text" class="" placeholder="Enter name">
+
+              </div>
+              <div class="col-md-6">
+                <label class="fw-bold">Date: </label>
+                <input type="datetime-local" placeholder="Enter name">
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label class="fw-bold">Discription: </label>
+                <input type="text" placeholder="Enter name">
+
+              </div>
+              <div class="col-md-6">
+                <label class="fw-bold">Status: </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--Select --</option>
+                  <option value="1">Status 1</option>
+                  <option value="2">Status 2</option>
+
+                </select>
+              </div>
+
+            </div>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label class="fw-bold">Priority: </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--Select --</option>
+                  <option value="1">High</option>
+                  <option value="2">Medium </option>
+                  <option value="2">Low </option>
+
+
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="fw-bold">Category: </label>
+                <input type="text" placeholder="Enter name">
+
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <label class="fw-bold">Comment: </label>
+                <textarea class="d-block w-100 text-start text-muted"
+                  name="Message">The cat was playing in the garden.</textarea>
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModa3">
+      Sub Checklist demo modal
+    </button>
+    <!-- SubChecklistModal -->
+    <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Sub Checklist</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row modalitems mt-2 align-items-center">
+
+
+              <div class="col-1">
+                <i class="fa-regular fa-calendar-check fs-4"></i>
+              </div>
+              <div class="col-11 ">
+                <input type="text" class="w-100 text-muted" placeholder="Event title">
+
+              </div>
+            </div>
+
+
+
+            <div class="row modalitems gy-3 mt-2 align-items-center">
+
+              <div class="col-md-6 col-12">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-1">
+                    <i class="fa-solid fa-calendar-days fs-4"></i>
+
+                  </div>
+                  <div class="col-11 col-md-10 ">
+                    <input type="datetime-local" class=" text-muted w-100" placeholder="">
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12">
+                <div class="row justify-content-between align-items-center ">
+                  <div class="col-1">
+                    <i class="fa-solid fa-calendar-minus fs-4"></i>
+                  </div>
+                  <div class="col-md-10 col-11 ">
+                    <input type="datetime-local" class=" text-muted w-100" placeholder="">
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="row mt-2 align-items-center">
+
+              <div class="col-1">
+                <i class="fa-solid fa-rotate fs-4"></i>
+
+              </div>
+              <div class="col-md-5 col-11">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>--No Repeat --</option>
+                  <option value="1">Status 1</option>
+                  <option value="2">Status 2</option>
+
+                </select>
+              </div>
+
+            </div>
+            <div class="row  mt-2 align-items-center">
+
+
+              <div class="col-1">
+                <i class="fa-solid fa-calendar-days fs-4"></i>
+
+              </div>
+              <div class="col-11 ">
+                <input type="text" class="w-100 text-muted" placeholder="Discription ">
+
+              </div>
+            </div>
+            <div class="row modalitems gy-3 mt-2 align-items-center">
+
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-1">
+                    <i class="fa-solid fa-circle-check fs-4"></i>
+                  </div>
+                  <div class="col-11 col-md-10 ">
+                    <input type="text" class=" text-muted w-100" placeholder="Status">
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center ">
+                  <div class="col-1">
+                    <i class="fa-solid fa-calendar-days fs-4"></i>
+
+                  </div>
+                  <div class="col-md-10 col-11 ">
+                    <input type="text" class=" text-muted w-100" placeholder="Priority">
+
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center ">
+                  <div class="col-1">
+                    <i class="fa-solid fa-table fs-4"></i>
+                  </div>
+                  <div class="col-md-10 col-11 ">
+                    <input type="text" class=" text-muted w-100" placeholder="Category">
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row modalitems gy-3 mt-2 align-items-center">
+
+              <div class="col-md-8 col-12">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-1">
+                    <i class="fa-solid fa-pen-to-square fs-4"></i>
+                  </div>
+                  <div class="col-11 col-md-11 ">
+                    <input type="text" class=" text-muted w-100" placeholder="Comment">
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center ">
+                  <div class="col-1">
+                    <i class="fa-solid fa-palette fs-4"></i>
+                  </div>
+                  <div class="col-md-10 col-11 ">
+                    <input type="text" class=" text-muted w-100" placeholder="Select Color">
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+            <div class="row modalitems gy-3 mt-2 align-items-center">
+
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-1">
+                    <i class="fa-solid fa-share-nodes fs-4"></i>
+                  </div>
+                  <div class="col-11 col-md-10 ">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>None</option>
+                      <option value="1">Status 1</option>
+                      <option value="2">Status 2</option>
+
+                    </select>
+
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center ">
+
+                  <div class="col ">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Read Only</option>
+                      <option value="1">Status 1</option>
+                      <option value="2">Status 2</option>
+
+                    </select>
+                  </div>
+
+
+                </div>
+
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="row justify-content-between align-items-center ">
+
+                  <div class="col ">
+                    <input type="text" class=" text-muted w-100" placeholder="Individual">
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="my-4">
+              <h4>Add SubChecklist</h4>
+              <div class="row justify-content-center py-2 align-items-center mx-2"
+                style="border: 1px solid rgb(79, 59, 231);">
+                <div class="col-8">
+                  <div class="inputbox">
+                    <input type="text" class=" text-muted w-100" placeholder="Enter  SubChecklist">
+
+                  </div>
+                </div>
+                <div class="col-4 col-md-2">
+                  <div class="icon-box p-2  text-center  bg-black text-white">
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Update</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
