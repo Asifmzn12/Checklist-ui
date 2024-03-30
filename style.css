@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 
 
 }
@@ -32,14 +33,22 @@ body{
     background-color: red;
 }
 .custom-select select {
-    background-color: transparent;
+    background-color: #00000014;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 16px;
   
   }
   .radiobtn{
-  max-width: 16px;
+  min-width: 20px;
+  max-width: 20px;
+
+  }
+  .inputbg{
+    background-color: #00000014;
+    color: black !important;
+    font-weight: 600;
+
   }
   #exampleModal input{
     width: 100% !important ;
@@ -108,7 +117,19 @@ label{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.leftBox{
+    border: 1px solid #908c8c;
+}
+.rightBox{
+    border: 1px solid  #908c8c;
   
+}
+.cards{
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: calc(100vh - 200px); /* Set a maximum height for the section */
+}
+  
+i{}
 
  
   
