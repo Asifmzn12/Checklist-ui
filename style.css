@@ -1,164 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @media only screen and (max-width: 576px) {
-    input{
-        width: 100% !important;
-    }
-
-    
-}
-input:focus{
-
+	input {
+		width: 100% !important;
+	}
 }
 
-body{
-    font-family: "Plus Jakarta Sans", sans-serif !important;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif !important;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
 
 
 }
 
-.green{
-    height: 15px;
-    width: 15px;
-    background-color: rgb(57, 219, 68);
+/* Color Boxes */
+.green {
+	height: 15px;
+	width: 15px;
+	background-color: rgb(57, 219, 68);
 }
-.blue{
-    height: 15px;
-    width: 15px;
-    background-color: rgb(90, 6, 245);
+
+.blue {
+	height: 15px;
+	width: 15px;
+	background-color: rgb(90, 6, 245);
 }
-.red{
-    height: 15px;
-    width: 15px;
-    background-color: red;
+
+.red {
+	height: 15px;
+	width: 15px;
+	background-color: red;
 }
+
+/* This is for input boxes */
 .custom-select select {
-    background-color: #00000014;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 16px;
-  
-  }
-  .radiobtn{
-  min-width: 20px;
-  max-width: 20px;
-  height: 20px;
+	background-color: #00000014;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	font-size: 16px;
 
-  }
-  .inputbg{
-    background-color: #00000014;
-    color: black !important;
-    font-weight: 500;
-    border: 1px solid #908c8c;
-
-  }
-  #AddLeave input{
-    width: 100% !important ;
-    display: block;
-    padding: .375rem 2.25rem .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    /* color: var(--bs-body-color); */
-    /* background-color: var(--bs-form-control-bg); */
-  
-  
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: .375rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
-    
-    margin: 0 20px 0 0 !important;
-   
-    border-width: thin;
-    text-align: end;
+.radiobtn {
+	min-width: 20px;
+	max-width: 20px;
+	height: 20px;
+
 }
-b{
-    color: rgb(225, 86, 86);
+
+.inputbg {
+	background-color: #00000014;
+	color: black !important;
+	font-weight: 500;
+	border: 1px solid #908c8c;
+
 }
-.modal-title{
-    color: rgb(31, 86, 31);
-    font-weight: bold;
-}
-#SubchecklistModal input,textarea{
-    width: 100% !important ;
-    display: block;
-    padding: .500rem 2.25rem .500rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    /* color: var(--bs-body-color); */
-    /* background-color: var(--bs-form-control-bg); */
-  
-  
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: .375rem;
- 
-}
-#Addchecklist input,textarea{
-    width: 100% !important ;
-    display: block;
-    padding: .500rem 2.25rem .500rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    /* color: var(--bs-body-color); */
-    /* background-color: var(--bs-form-control-bg); */
-  
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: .375rem;
- 
+
+/* This is a Addleave Modal input boxes */
+#AddLeave input {
+	width: 100% !important;
+	display: block;
+	padding: .375rem 2.25rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	border-radius: .375rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    
-    margin: 0 20px 0 0 !important;
-   
-    border-width: thin;
-    text-align: end;
-}
-label{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.leftBox{
-    border: 1px solid #908c8c;
-}
-.rightBox{
-    border: 1px solid  #908c8c;
-  
-}
-.cards{
-    overflow-y: auto; /* Enable vertical scrolling */
-    max-height: calc(100vh - 200px); /* Set a maximum height for the section */
-}
-  
-.text::after{
-        content: '';
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: rgb(241, 146, 162); /* Adjust color as needed */
-        position: absolute;
-        bottom: -15px; /* Adjust position as needed */
-        left: 0;
-       
-      
+
+	margin: 0 20px 0 0 !important;
+
+	border-width: thin;
+	text-align: end;
 }
 
+b {
+	color: rgb(225, 86, 86);
+}
 
- 
-  
+.modal-title {
+	color: rgb(31, 86, 31);
+	font-weight: bold;
+}
 
-  
- 
-  
+#SubchecklistModal input,
+textarea {
+	width: 100% !important;
+	display: block;
+	padding: .500rem 2.25rem .500rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	border-radius: .375rem;
+
+}
+
+/* This is a Addchecklist Modal input boxes */
+
+#Addchecklist input,
+textarea {
+	width: 100% !important;
+	display: block;
+	padding: .500rem 2.25rem .500rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	border-radius: .375rem;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+
+	margin: 0 20px 0 0 !important;
+
+	border-width: thin;
+	text-align: end;
+}
+
+label {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.leftBox {
+	border: 1px solid #908c8c;
+}
+
+.rightBox {
+	border: 1px solid #908c8c;
+
+}
+
+.cards {
+	overflow-y: auto;
+	/* Enable vertical scrolling */
+	max-height: calc(100vh - 200px);
+	/* Set a maximum height for the right section of cards */
+}
+
+.text::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: rgb(241, 146, 162);
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+
+
+}
+
+a {
+	color: black !important;
+	text-decoration: none !important;
+}
+
+.fc .fc-button-primary {
+	background-color: #e8ebee !important;
+	color: black !important;
+}
